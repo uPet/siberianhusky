@@ -4,7 +4,7 @@ SiberianHusky is a simple file manager for Amazon Glacier that works by follow a
 SiberianHusky carry out a simple file inventory in a MongoDB database in order to be able to manage the stored files.
 
 Configuration file example:
-
+```
 {
    "filePath":"/var/backup/images.tar",
    "fileDescription":"Weekly backup",
@@ -17,6 +17,7 @@ Configuration file example:
    "awsSecretKey":"8p3gDIQJk7CIe66y66FTDHj2lyqklUcB2XyEC9R",
    "glacierEndPoint":"https://glacier.us-east-1.amazonaws.com/"
 }
+```
 
 The above snippet specifies that files in the inventory that are older than 14 days should by deleted from Glacier and that the  "/var/backup/images.tar" file, should be uploaded to Amazon Glacier.
 
